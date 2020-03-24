@@ -3,6 +3,7 @@ import './App.css';
 
 import Header from './Components/Header/Header';
 import Portfolio from './Components/Portfolio/Portfolio';
+import Skills from './Components/Skills/Skills';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="A">
       <Header/>
       <Portfolio/>
+      <Skills/>
     </div>
   );
 }

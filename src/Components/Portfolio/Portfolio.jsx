@@ -2,7 +2,7 @@ import React from 'react'
 import { Header, Icon, Image, Divider, Card } from 'semantic-ui-react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import {FlippingCard, FlippingCardBack, FlippingCardFront} from 'react-ui-cards';
+import {FlippingCard, FlippingCardBack, FlippingCardFront, NewsHeaderCard} from 'react-ui-cards';
 // import AwesomeSlider from 'react-awesome-slider';
 // import 'react-awesome-slider/dist/styles.css';
 import './Portfolio.css';
@@ -18,7 +18,7 @@ const portfolio = () => {
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3,
+          items: 5,
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
@@ -47,10 +47,12 @@ const portfolio = () => {
 
             <Carousel responsive={responsive}>
             <div>
+                
+
                 <FlippingCard>
                     <FlippingCardBack>
                     <Card>
-                            <Image src='https://dummyimage.com/600x400/3f2d91/fff&text=Salman+Profile' wrapped ui={false} />
+                            <Image src='https://img.freepik.com/free-photo/top-angle-view-male-web-designer-work_1098-20534.jpg?size=626&ext=jpg' wrapped ui={false} />
                             <Card.Content>
                             <Card.Header>Matthew</Card.Header>
                             <Card.Meta>
@@ -69,7 +71,12 @@ const portfolio = () => {
                     </Card>
                     </FlippingCardBack>
                     <FlippingCardFront>
-                    <Card color='blue' image='https://dummyimage.com/600x400/3f2d91/fff&text=Salman+Profile' />
+                        <NewsHeaderCard
+                            thumbnail='https://img.freepik.com/free-photo/top-angle-view-male-web-designer-work_1098-20534.jpg?size=626&ext=jpg'
+                            author='App Development'
+                            
+                            title='Developed Android Application For a Newspaper, NewsMag'
+                        />
                     </FlippingCardFront>
                 </FlippingCard>
             </div>
@@ -77,32 +84,7 @@ const portfolio = () => {
                 <FlippingCard>
                     <FlippingCardBack>
                     <Card>
-                            <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
-                            <Card.Content>
-                            <Card.Header>Matthew</Card.Header>
-                            <Card.Meta>
-                                <span className='date'>Joined in 2015</span>
-                            </Card.Meta>
-                            <Card.Description>
-                                Matthew is a musician living in Nashville.
-                            </Card.Description>
-                            </Card.Content>
-                            <Card.Content extra>
-                            <a>
-                                <Icon name='user' />
-                                22 Friends
-                            </a>
-                            </Card.Content>
-                    </Card>
-                    </FlippingCardBack>
-                    Content that will be displayed on the front of the card
-                </FlippingCard>
-            </div>
-            <div>
-                <FlippingCard>
-                    <FlippingCardBack>
-                    <Card>
-                            <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
+                            <Image src='https://img.freepik.com/free-photo/web-design-website-coding-concept_53876-64989.jpg?size=626&ext=jpg' wrapped ui={false} />
                             <Card.Content>
                             <Card.Header>Matthew</Card.Header>
                             <Card.Meta>
@@ -121,7 +103,12 @@ const portfolio = () => {
                     </Card>
                     </FlippingCardBack>
                     <FlippingCardFront>
-                        Content that will be displayed on the front of the card
+                        <NewsHeaderCard
+                            thumbnail='https://img.freepik.com/free-photo/web-design-website-coding-concept_53876-64989.jpg?size=626&ext=jpg'
+                            author='Salman'
+                            discription='asdasda'
+                            title='asdadsadsda sad a'
+                        />
                     </FlippingCardFront>
                 </FlippingCard>
             </div>
@@ -129,7 +116,7 @@ const portfolio = () => {
                 <FlippingCard>
                     <FlippingCardBack>
                     <Card>
-                            <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
+                            <Image src='https://image.freepik.com/free-photo/crop-man-working-with-laptop_23-2147689387.jpg' wrapped ui={false} />
                             <Card.Content>
                             <Card.Header>Matthew</Card.Header>
                             <Card.Meta>
@@ -148,7 +135,112 @@ const portfolio = () => {
                     </Card>
                     </FlippingCardBack>
                     <FlippingCardFront>
-                        Content that will be displayed on the front of the card
+                        <NewsHeaderCard
+                            thumbnail='https://image.freepik.com/free-photo/crop-man-working-with-laptop_23-2147689387.jpg'
+                            author='Salman'
+                            discription='asdasda'
+                            title='asdadsadsda sad a'
+                        />
+                    </FlippingCardFront>
+                </FlippingCard>
+                
+            </div>
+            <div>
+                <FlippingCard>
+                    <FlippingCardBack>
+                    <Card>
+                            <Image src='https://image.freepik.com/free-photo/communication-technology-selective-focus-science-internet-closeup_1421-252.jpg' wrapped ui={false} />
+                            <Card.Content>
+                            <Card.Header>Matthew</Card.Header>
+                            <Card.Meta>
+                                <span className='date'>Joined in 2015</span>
+                            </Card.Meta>
+                            <Card.Description>
+                                Matthew is a musician living in Nashville.
+                            </Card.Description>
+                            </Card.Content>
+                            <Card.Content extra>
+                            <a>
+                                <Icon name='user' />
+                                22 Friends
+                            </a>
+                            </Card.Content>
+                    </Card>
+                    </FlippingCardBack>
+                    <FlippingCardFront>
+                    <NewsHeaderCard
+                            thumbnail='https://image.freepik.com/free-photo/communication-technology-selective-focus-science-internet-closeup_1421-252.jpg'
+                            author='Salman'
+                            discription='asdasda'
+                            title='asdadsadsda sad a'
+                        />
+                    </FlippingCardFront>
+                    
+                </FlippingCard>
+            </div>
+            <div>
+                
+
+                <FlippingCard>
+                    <FlippingCardBack>
+                    <Card>
+                            <Image src='https://img.freepik.com/free-photo/top-angle-view-male-web-designer-work_1098-20534.jpg?size=626&ext=jpg' wrapped ui={false} />
+                            <Card.Content>
+                            <Card.Header>Matthew</Card.Header>
+                            <Card.Meta>
+                                <span className='date'>Joined in 2015</span>
+                            </Card.Meta>
+                            <Card.Description>
+                                Matthew is a musician living in Nashville.
+                            </Card.Description>
+                            </Card.Content>
+                            <Card.Content extra>
+                            <a>
+                                <Icon name='user' />
+                                22 Friends
+                            </a>
+                            </Card.Content>
+                    </Card>
+                    </FlippingCardBack>
+                    <FlippingCardFront>
+                        <NewsHeaderCard
+                            thumbnail='https://img.freepik.com/free-photo/top-angle-view-male-web-designer-work_1098-20534.jpg?size=626&ext=jpg'
+                            author='Salman'
+                            discription='asdasda'
+                            title='asdadsadsda sad a'
+                        />
+                    </FlippingCardFront>
+                </FlippingCard>
+            </div>
+            <div>
+                <FlippingCard>
+                    <FlippingCardBack>
+                    <Card>
+                            <Image src='https://img.freepik.com/free-photo/web-design-website-coding-concept_53876-64989.jpg?size=626&ext=jpg' wrapped ui={false} />
+                            <Card.Content>
+                            <Card.Header>Matthew</Card.Header>
+                            <Card.Meta>
+                                <span className='date'>Joined in 2015</span>
+                            </Card.Meta>
+                            <Card.Description>
+                                Matthew is a musician living in Nashville.
+                            </Card.Description>
+                            </Card.Content>
+                            <Card.Content extra>
+                            <a>
+                                <Icon name='user' />
+                                22 Friends
+                            </a>
+                            </Card.Content>
+                    </Card>
+                    </FlippingCardBack>
+                    <FlippingCardFront>
+                        <NewsHeaderCard
+                            thumbnail='https://img.freepik.com/free-photo/web-design-website-coding-concept_53876-64989.jpg?size=626&ext=jpg'
+                            author='Salman'
+                            discription='asdasda'
+                            title='asdadsadsda sad a'
+                        />
                     </FlippingCardFront>
                 </FlippingCard>
             </div>
